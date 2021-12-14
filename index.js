@@ -1,24 +1,24 @@
 
-/*if (
-    document.querySelector(".nineties").getSVGDocument().getElementById("songyear")
-) {
-    console.log("songyear");
-}
+//LATEST FAILED ATTEMPT - using contentDocument instead of getSVGDocument()
 
-else {
-    console.log("nosongyear");
-} */
-                                    /*.getSVGDocument()*/
-var test = document.getElementById("nineties").contentDocument
-console.log(test);
+var test = document.getElementById("nineties");
+var test2 = test.contentDocument;
+                                    
+console.log(test, test2);
 
-//document.querySelector(".nineties").getSVGDocument()
-//.getElementById("songyear").setAttribute("fill", "red");
+
+// METHOD ONE - using getSVGDocument() within a class on an object svg
+
+//document.querySelector(".nineties").getSVGDocument().getElementById("songyear").setAttribute("fill", "red");
+
+
+
+//METHOD 2 - no querySelector, assign an ID to object instead
 
 //document.getElementById("nineties").getSVGDocument().getElementById("songyear").setAttribute("fill", "red");
 
+
+//ANOTHER FAILED ATTEMPT
+
 //document.getElementById("songyear").setAttribute("fill", "red");
 
-
-
-console.log();
